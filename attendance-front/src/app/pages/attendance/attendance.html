@@ -1,0 +1,26 @@
+<nav class="navbar navbar-dark bg-dark mb-5"> 
+  <div class="container"> 
+    <span class="navbar-brand">Attendance System</span> 
+    <button class="btn btn-outline-danger" (click)="logout()">Logout</button> 
+  </div>
+  </nav> 
+ 
+<div class="container text-center"> 
+  <div class="card shadow-sm p-5"> 
+    <h2>Mark Your Attendance</h2> 
+    <p class="text-muted">Select an option below</p> 
+ 
+    <div class="d-flex justify-content-center gap-3 mt-4"> 
+      <button class="btn btn-success btn-lg px-5" (click)="mark('IN')"> 
+        CHECK IN 
+      </button> 
+      <button class="btn btn-warning btn-lg px-5" (click)="mark('OUT')"> 
+        CHECK OUT 
+      </button> 
+    </div> 
+ 
+    <div *ngIf="message" class="alert alert-info mt-4"> 
+      {{ message }} 
+    </div> 
+  </div> 
+</div> 

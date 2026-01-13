@@ -1,0 +1,15 @@
+# Node (Angular)
+**/node_modules/
+**/dist/
+**/.angular/
+
+# Java (Gradle)
+**/build/
+**/.gradle/
+**/bin/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.log
